@@ -62,3 +62,7 @@ def analyze(request):
     purpose = ', '.join(purpose) + '.'
     params = {'purpose': purpose, 'analyzed_text': analyzed}
     return render(request, 'analyze.html', params)
+
+
+def about(request):
+    return render(request, 'about.html')
